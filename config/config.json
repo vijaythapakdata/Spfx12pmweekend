@@ -9,11 +9,19 @@
           "manifest": "./src/webparts/firstWebPart/FirstWebPartWebPart.manifest.json"
         }
       ]
+    },
+    "project-structure-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectStructure/ProjectStructureWebPart.js",
+          "manifest": "./src/webparts/projectStructure/ProjectStructureWebPart.manifest.json"
+        }
+      ]
     }
   },
-  
   "externals": {},
   "localizedResources": {
-    "FirstWebPartWebPartStrings": "lib/webparts/firstWebPart/loc/{locale}.js"
+    "FirstWebPartWebPartStrings": "lib/webparts/firstWebPart/loc/{locale}.js",
+    "ProjectStructureWebPartStrings": "lib/webparts/projectStructure/loc/{locale}.js"
   }
 }

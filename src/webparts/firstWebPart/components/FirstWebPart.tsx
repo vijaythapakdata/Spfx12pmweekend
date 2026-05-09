@@ -5,9 +5,18 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import BasicForm from './FluentControls/BasicForm';
 import DropdownFiles from './FluentControls/DropdownFiles';
 import UseStateHook from '../../../Hooks/UseStateHook';
+import UseEffectHook from '../../../Hooks/UseEffectHook';
+import StopWatchTimer from '../../../Hooks/StopWatchtimer';
+import UseCallbackHook from '../../../Hooks/UseCallbackHook';
+import UseMemoHook from '../../../Hooks/UseMemoHook';
+// import useDebounceExample from './UseDebounceExample';
+// import useDebounceExample from '../../../Hooks/UseDebounceExample';
+import UseDebounceExample from '../../../Hooks/UseDebounceExample';
+// import useDebounce from '../../../Hooks/DebounceHook';
 const FirstWebPart:React.FC<IFirstWebPartProps>=(props)=>{
 //const -> const is constant means it is non volatile we can not update the value after declaring
 //Number
+
 const number1:number=5;
 console.log(number1); //5
 //way to name the varaibe. numericChar -abc1 =/ab-1 abC
@@ -125,8 +134,17 @@ return(
     {myParameter(10,20)}
     {props.context.pageContext.user.displayName}
     {props.context.pageContext.web.absoluteUrl}
+
     <br/>
     <UseStateHook/>
+    <br/>
+    <UseEffectHook/>
+    <br/>
+    <h2>Timer</h2>
+    <StopWatchTimer/>
+    <UseCallbackHook/>
+    <UseMemoHook/>
+    <UseDebounceExample/>
     </>
   )
 }
