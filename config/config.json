@@ -33,6 +33,14 @@
           "manifest": "./src/webparts/sphttpClientSharePoint/SphttpClientSharePointWebPart.manifest.json"
         }
       ]
+    },
+    "formik-validation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/formikValidation/FormikValidationWebPart.js",
+          "manifest": "./src/webparts/formikValidation/FormikValidationWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -41,6 +49,7 @@
     "ProjectStructureWebPartStrings": "lib/webparts/projectStructure/loc/{locale}.js",
     "SharePointFormWebPartStrings": "lib/webparts/sharePointForm/loc/{locale}.js",
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
-    "SphttpClientSharePointWebPartStrings": "lib/webparts/sphttpClientSharePoint/loc/{locale}.js"
+    "SphttpClientSharePointWebPartStrings": "lib/webparts/sphttpClientSharePoint/loc/{locale}.js",
+    "FormikValidationWebPartStrings": "lib/webparts/formikValidation/loc/{locale}.js"
   }
 }
