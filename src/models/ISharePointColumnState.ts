@@ -22,3 +22,10 @@ export interface ISharePointFormState{
     Skills:any[];
     DOB:any;
 }
+
+
+export interface ISPHTTPCLIENTCOLUMNSTATE{
+    ID:number;
+    Title:string;
+    Age:any;
+}
