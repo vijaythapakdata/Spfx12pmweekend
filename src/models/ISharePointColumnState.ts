@@ -29,3 +29,12 @@ export interface ISPHTTPCLIENTCOLUMNSTATE{
     Title:string;
     Age:any;
 }
+
+export interface IPaginatedTableState{
+    key:number;
+    Title:string;
+    EmailAddress:string;
+    Age:number;
+    City:string;
+    Admin:string;
+}

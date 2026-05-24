@@ -3,5 +3,6 @@ export enum ListNames{
     SharePointFormList="First List",
     LookuPlist="Cities",
     CrudList="EMPDATA",
-    ValidationList="Formik List"
+    ValidationList="Formik List",
+    PaginatedList="First List"
 }
