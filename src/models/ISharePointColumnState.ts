@@ -38,3 +38,11 @@ export interface IPaginatedTableState{
     City:string;
     Admin:string;
 }
+export interface IUserInfo{
+    id:string;
+    displayName:string;
+    mail:string;
+    jobTitle?:string;
+    department?:string;
+
+}
