@@ -73,6 +73,22 @@
           "manifest": "./src/webparts/profileCard/ProfileCardWebPart.manifest.json"
         }
       ]
+    },
+    "user-profile-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/userProfileApp/UserProfileAppWebPart.js",
+          "manifest": "./src/webparts/userProfileApp/UserProfileAppWebPart.manifest.json"
+        }
+      ]
+    },
+    "react-routes-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactRoutes/ReactRoutesWebPart.js",
+          "manifest": "./src/webparts/reactRoutes/ReactRoutesWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -86,6 +102,8 @@
     "PaginatedtableWebPartStrings": "lib/webparts/paginatedtable/loc/{locale}.js",
     "GetAlluserSWebPartStrings": "lib/webparts/getAlluserS/loc/{locale}.js",
     "GraphApiKeyWebPartStrings": "lib/webparts/graphApiKey/loc/{locale}.js",
-    "ProfileCardWebPartStrings": "lib/webparts/profileCard/loc/{locale}.js"
+    "ProfileCardWebPartStrings": "lib/webparts/profileCard/loc/{locale}.js",
+    "UserProfileAppWebPartStrings": "lib/webparts/userProfileApp/loc/{locale}.js",
+    "ReactRoutesWebPartStrings": "lib/webparts/reactRoutes/loc/{locale}.js"
   }
 }
