@@ -1,0 +1,209 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+// ─── Variables ────────────────────────────────────────────────────────────────
+$sp-blue:      #0078d4;
+$sp-blue-dark: #106ebe;
+$sp-green:     #107c10;
+$sp-red:       #d13438;
+$sp-gray:      #605e5c;
+$sp-bg:        #f3f2f1;
+$sp-white:     #ffffff;
+$sp-border:    #edebe9;
+$sp-text:      #323130;
+$sp-subtle:    #605e5c;
+$radius:       4px;
+
+// ─── WebPart Container ────────────────────────────────────────────────────────
+.myWebPart {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $sp-text;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+// ─── Header ───────────────────────────────────────────────────────────────────
+.header {
+  background: $sp-blue;
+  color: $sp-white;
+  border-radius: $radius;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+// ─── Sections ─────────────────────────────────────────────────────────────────
+.section {
+  background: $sp-white;
+  border: 1px solid $sp-border;
+  border-radius: $radius;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.sectionTitle {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $sp-text;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $sp-blue;
+}
+
+// ─── Counter ──────────────────────────────────────────────────────────────────
+.counterDisplay {
+  font-size: 56px;
+  font-weight: 700;
+  color: $sp-blue;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// ─── Buttons ──────────────────────────────────────────────────────────────────
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: $radius;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+
+  &:hover {
+    opacity: 0.88;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.btnPrimary {
+  background: $sp-blue;
+  color: $sp-white;
+}
+
+.btnSuccess {
+  background: $sp-green;
+  color: $sp-white;
+}
+
+.btnDanger {
+  background: $sp-red;
+  color: $sp-white;
+}
+
+.btnSecondary {
+  background: $sp-gray;
+  color: $sp-white;
+}
+
+// ─── Input Row ────────────────────────────────────────────────────────────────
+.inputRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #c8c6c4;
+  border-radius: $radius;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  color: $sp-text;
+
+  &:focus {
+    border-color: $sp-blue;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+  }
+}
+
+// ─── Item List ────────────────────────────────────────────────────────────────
+.emptyMessage {
+  color: $sp-subtle;
+  font-style: italic;
+  text-align: center;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.itemList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $sp-bg;
+  border-radius: $radius;
+  padding: 10px 14px;
+  border-left: 3px solid $sp-blue;
+}
+
+.itemText {
+  font-size: 14px;
+  color: $sp-text;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $sp-red;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 4px;
+  border-radius: 50%;
+
+  &:hover {
+    background: rgba(209, 52, 56, 0.1);
+  }
+}
+
+.itemCount {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: $sp-subtle;
+  text-align: right;
+}

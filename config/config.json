@@ -89,6 +89,14 @@
           "manifest": "./src/webparts/reactRoutes/ReactRoutesWebPart.manifest.json"
         }
       ]
+    },
+    "my-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myWebPart/MyWebPartWebPart.js",
+          "manifest": "./src/webparts/myWebPart/MyWebPartWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -104,6 +112,7 @@
     "GraphApiKeyWebPartStrings": "lib/webparts/graphApiKey/loc/{locale}.js",
     "ProfileCardWebPartStrings": "lib/webparts/profileCard/loc/{locale}.js",
     "UserProfileAppWebPartStrings": "lib/webparts/userProfileApp/loc/{locale}.js",
-    "ReactRoutesWebPartStrings": "lib/webparts/reactRoutes/loc/{locale}.js"
+    "ReactRoutesWebPartStrings": "lib/webparts/reactRoutes/loc/{locale}.js",
+    "MyWebPartWebPartStrings": "lib/webparts/myWebPart/loc/{locale}.js"
   }
 }
